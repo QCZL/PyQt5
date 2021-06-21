@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 开发团队  :  chengc
+# 开发团队  :  Sunniwell
 # 开发人员  :  chengc
 # 开发时间  :  2021/6/19 11:37
 # 文件名称  :  qSliderDemo.py
