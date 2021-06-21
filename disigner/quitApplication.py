@@ -42,7 +42,7 @@ class QuitApplication(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon('icon/Coding.ico'))
+    app.setWindowIcon(QIcon('../icon/Coding.ico'))
     main = QuitApplication()
     main.show()
     sys.exit(app.exec_())

@@ -28,7 +28,7 @@ class FistMainWindow(QMainWindow):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     # 设置窗口图标
-    app.setWindowIcon(QIcon('icon/Coding.ico'))
+    app.setWindowIcon(QIcon('../icon/Coding.ico'))
 
     mainWindow = FistMainWindow()
     mainWindow.show()
