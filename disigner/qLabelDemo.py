@@ -37,7 +37,7 @@ class QLabelDemo(QWidget):
         label_2.setText('<a href="#">这是一个锚点></a>')
 
         label_3.setText("这是一个图片")
-        pixmap = QPixmap('../image/7d7c618040004616b9067ec4058b6eaa.jpg')
+        pixmap = QPixmap('../image/liuyifei.jpg')
         label_3.setPixmap(pixmap)
         label_3.setAlignment(Qt.AlignCenter)
 
