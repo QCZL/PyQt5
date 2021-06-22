@@ -28,7 +28,7 @@ point = QPoint(150, 300)
 painter.drawEllipse(point, a, b)
     point：原点
     a: 长轴
-    b: 端州
+    b: 短轴
 
 5、绘制多边形
 创建对边形对象，坐标需要按顺序传入，否则无法绘制
