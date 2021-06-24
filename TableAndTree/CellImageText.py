@@ -23,23 +23,31 @@ class CellSizeDemo(QWidget):
 
         self.tableWidget = QTableWidget(4, 4)
         self.tableWidget.setHorizontalHeaderLabels(['姓名', '性别', '体重（KG）', '图标'])
+        self.tableWidget.cellClicked.connect(self.showImage)
 
-        listData = [['刘亦菲', '女', '45', '../image/liuyifei.jpg'],
-                    ['刘诗诗', '女', '44', '../image/liushishi.jpg'],
-                    ['迪丽热巴', '女', '50', '../image/dilireba.jpg'],
-                    ['古力娜扎', '女', '48', '../image/gulinazha.jpg']]
+        self.listData = [['刘亦菲', '女', '45', '../image/liuyifei.jpg'],
+                         ['刘诗诗', '女', '44', '../image/liushishi.jpg'],
+                         ['迪丽热巴', '女', '50', '../image/dilireba.jpg'],
+                         ['古力娜扎', '女', '48', '../image/gulinazha.jpg']]
 
-        for i in range(len(listData)):
-            for j in range(len(listData[i])):
+        for i in range(len(self.listData)):
+            for j in range(len(self.listData[i])):
                 if j == 3:
-                    item = QTableWidgetItem(QIcon(listData[i][j]), listData[i][0])
+                    item = QTableWidgetItem(QIcon(self.listData[i][j]), self.listData[i][0])
                 else:
-                    item = QTableWidgetItem(listData[i][j])
+                    item = QTableWidgetItem(self.listData[i][j])
                 self.tableWidget.setItem(i, j, item)
+
+        self.lable = QLabel()
 
         layout = QVBoxLayout()
         layout.addWidget(self.tableWidget)
+        layout.addWidget(self.lable)
         self.setLayout(layout)
+
+    def showImage(self, i, j):
+        if j == 3:
+            self.lable.setPixmap(QPixmap(self.listData[i][j]).scaled(320, 180))
 
 
 if __name__ == '__main__':
