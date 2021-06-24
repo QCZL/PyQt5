@@ -20,7 +20,7 @@ from PyQt5.QtWidgets import *
 class CellTextAlignmentDemo(QWidget):
     def __init__(self):
         super(CellTextAlignmentDemo, self).__init__()
-        self.setWindowTitle('数据排序')
+        self.setWindowTitle('设置单元格文本对齐方式')
         self.resize(400, 200)
 
         self.tableWidget = QTableWidget(4, 3)
