@@ -33,6 +33,7 @@ class PlaceCtrlCell(QWidget):
         comboBoxItem = QComboBox()
         comboBoxItem.addItem('男')
         comboBoxItem.addItem('女')
+        comboBoxItem.setCurrentIndex(1)
         # QSS
         comboBoxItem.setStyleSheet('QComboBox{margin:3px};')
         tableWidget.setCellWidget(0, 1, comboBoxItem)
