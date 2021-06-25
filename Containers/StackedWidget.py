@@ -20,7 +20,7 @@ from PyQt5.QtWidgets import *
 class StackedWidgetDemo(QWidget):
     def __init__(self):
         super(StackedWidgetDemo, self).__init__()
-        self.setWindowTitle('选项卡控件演示')
+        self.setWindowTitle('堆栈窗口显示')
         self.initUI()
 
     def initUI(self):
