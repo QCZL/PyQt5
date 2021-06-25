@@ -33,6 +33,6 @@ class TreeViewDemo(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-mainWin = TreeViewDemo()
-mainWin.show()
-sys.exit(app.exec_())
+    mainWin = TreeViewDemo()
+    mainWin.show()
+    sys.exit(app.exec_())
