@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyQtCallJS</title>
+    <script>
+        function fullname() {
+          var firstname = document.getElementById('firstname').value;
+          var lastname = document.getElementById('lastname').value;
+          var fullname = firstname + lastname;
+
+          document.getElementById('fullname').value = fullname;
+          return fullname;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>姓氏：</label>
+        <input type="text" id="firstname">
+        <br>
+        <label>名字：</label>
+        <input type="text" id="lastname">
+        <br>
+        <label>全名：</label>
+        <input type="text" id="fullname">
+        <br>
+    </form>
+</body>
+</html>
