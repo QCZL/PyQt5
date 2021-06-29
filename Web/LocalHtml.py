@@ -20,7 +20,7 @@ from PyQt5.QtWebEngineWidgets import *
 class LocalHtml(QMainWindow):
     def __init__(self):
         super(LocalHtml, self).__init__()
-        self.setWindowTitle('打开外部网址')
+        self.setWindowTitle('装载本地页面')
         self.resize(1366, 768)
 
         browser = QWebEngineView()
